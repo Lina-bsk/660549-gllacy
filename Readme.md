@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Lina Zhabska](https://up.htmlacademy.ru/htmlcss/21/user/660549).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
