@@ -63,14 +63,13 @@
       <div class="container-form">
         <form class="catalog-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="input-name">Сортировка:</label>
-          <input class="catalog-input catalog-input_sort" type="text" name="datalist" list="sort">
-          <datalist id="sort">
-          <option>по популярности</option>
-          <option>по популярности</option>
-          <option>сначала недорогие</option>
-          <option>сначала дорогие</option>
-          <option>по жирности</option>
-          </datalist>
+          <select class="catalog-input catalog-input_sort" name="select">
+            <option value="popularity">по популярности</option>
+            <option value="popularity">по популярности</option>
+            <option value="inexpensive">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="caloricity">по жирности</option>
+          </select>
           <label class="input-name" for="range-price">Цена: 100 руб. - 500 руб.</label>
           <input class="catalog-input catalog-input_price" type="range" name="range" id="range-price" min="100" max="500">
           <fieldset class="catalog-input catalog-input_fat">
