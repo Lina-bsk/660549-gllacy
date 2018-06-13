@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="navigation">
         <a class="header-logo-link" href="index.html"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="logo Gllacy Shop"></a>
         <ul class="navigation-list">
-          <li class="navigation-list__item navigation-list__item--current"><a class="navigation-list__link" href="#">Каталог</a></li>
+          <li class="navigation-list__item navigation-list__item"><a class="navigation-list__link" href="#">Каталог</a></li>
           <li class="navigation-list__item"><a class="navigation-list__link" href="#">Доставка и оплата</a></li>
           <li class="navigation-list__item"><a class="navigation-list__link" href="#">О Компании</a></li>
         </ul>
@@ -45,7 +48,8 @@
                 <span class="purchase-item__price">450 руб.</span>
               </li>
             </ul><hr>
-            <span class="total">Итого: 750 руб.</span>
+            <span class="total"><b>Итого: 750 руб.</b>
+            </span>
             <button class="button" type="button">Оформить заказ</button>
           </li>
         </ul>
@@ -56,7 +60,7 @@
         <li class="breadcrumbs__menu">Сливочное</li>
       </ul>
       <p class="header-time-info">С 10 до 20,ежедневно<br>
-      <b>8 812 450-25-25</b></p>
+      <span class="header-time-info--phone">8 812 450-25-25</span>
     </header>
     <main class="catalog">
       <h1 class="catalog__title">Сливочное мороженое</h1>
@@ -105,7 +109,7 @@
           <li class="icy-cream-item">
             <a class="icy-cream-item__link" href="#">
               <img class="icy-cream-item__img" src="img/bestseller-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="icy-cream-item__info">310 ₽<span class="icy-cream-item__info_weight">/кг</span></p>
+              <p class="icy-cream-item__info">310 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
               <p class="icy-cream-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </a>
             <button type="button" class="button button--product">Быстрый просмотр</button>
@@ -113,22 +117,22 @@
           <li class="icy-cream-item">
             <a class="icy-cream-item__link" href="#">
               <img class="icy-cream-item__img" src="img/bestseller-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="icy-cream-item__info">380 ₽<span class="icy-cream-item__info_weight">/кг</span></p>
+              <p class="icy-cream-item__info">380 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
               <p class="icy-cream-item__description">Сливочно-кофейное с кусочками шоколада</p>
             </a>
-            <button type="button" class="button button_product">Быстрый просмотр</button>
+            <button type="button" class="button button--product">Быстрый просмотр</button>
           </li>
           <li class="icy-cream-item">
             <a class="icy-cream-item__link" href="#">
               <img class="icy-cream-item__img" src="img/bestseller-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="icy-cream-item__info">355 ₽<span class="icy-cream-item__info_weight">/кг</span></p>
+              <p class="icy-cream-item__info">355 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
               <p class="icy-cream-item__description">Сливочно-клубничное с присыпкой из белого шоколада</p></a>
-              <button type="button" class="button button_product">Быстрый просмотр</button>
+              <button type="button" class="button button--product">Быстрый просмотр</button>
             </li>
             <li class="icy-cream-item">
               <a class="icy-cream-item__link" href="#">
                 <img class="icy-cream-item__img" src="img/bestseller-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                <p class="icy-cream-item__info">415 ₽<span class="icy-cream-item__info_weight">/кг</span></p>
+                <p class="icy-cream-item__info">415 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
                 <p class="icy-cream-item__description">Сливочное крем-брюле с карамельной подливкой</p>
               </a>
               <button type="button" class="button button--product">Быстрый просмотр</button>
@@ -201,10 +205,10 @@
         </section>
         <ul class="pagination-list">
           <li class="pagination-number--current">1</li>
-          <li class="pagination-number"><a href="#">2</a></li>
-          <li class="pagination-number"><a href="#">3</a></li>
-          <li class="pagination-number"><a href="#">4</a></li>
-          <li class="pagination-number"><a href="#">5</a></li>
+          <li class="pagination-number"><a class="pagination-link" href="#">2</a></li>
+          <li class="pagination-number"><a class="pagination-link" href="#">3</a></li>
+          <li class="pagination-number"><a class="pagination-link" href="#">4</a></li>
+          <li class="pagination-number"><a class="pagination-link" href="#">5</a></li>
         </ul>
       </main>
       <footer class="main-footer">

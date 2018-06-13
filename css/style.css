@@ -1,0 +1,328 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff; 
+
+	background-color: #849d8f;
+}
+
+.navigation-list,
+.navigation-menu,
+.user-nav,
+.slider-list,
+.product,
+.about-gllacy,
+.social-btn,
+.helpful-info,
+.breadcrumbs {
+	list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.navigation-list__link {
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.navigation-list__link:hover {
+    color: #333333;
+    background-color: #f7f6f3; 
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.navigation-list__link:active {
+	color: #333333;
+    background-color: #f7f6f3;     /*эффект вдавливания*/
+}
+
+.navigation-list__link:visited {
+	color: #ffffff;
+	background-color: #d07058;
+	border-radius: 25px;
+}
+
+
+.navigation-menu {
+	background-color: #f8f7f4;
+}
+
+.navigation-menu__link {
+	font-size: 14px;
+	line-height: 16px;
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.navigation-menu__link:hover {
+	background-color: #fbded7;
+} 
+
+.navigation-menu__link:active {
+	background-color: #f6b5a5;
+}
+
+.navigation-menu__link:visited {            
+	background-color: #d07058;
+}
+
+.user-nav__btn {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #a1b4a9;
+	border: none;
+}
+
+.user-nav__btn:hover {
+    color: #323232;
+    background-color: #f8f7f4;
+}
+
+.nav-login-link {
+     font-size: 13px;
+     line-height: 24px;
+     color: #323232;
+}
+
+.nav-login-link:hover,
+.nav-login-link:active {
+	color: #e84d37;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;
+}
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active,
+.footer-link:hover,
+.footer-link:active {
+	color: #ffbc9e;
+}
+
+.catalog__title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+.input-name {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+
+
+.purchase {
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+	background-color: #f8f7f4;
+	list-style: none;
+}
+
+.purchase-item__weight-price {
+	color: #999999;
+}
+
+.button {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #e84d37;
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    border: none;
+
+}
+
+.form-btn,
+.catalog-input {
+	color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-input--filler,
+.catalog-input--fat {
+	border: none;
+}
+
+.catalog-input--sort:hover {
+    color: #323232;
+}
+
+.form-btn {
+    border: 2px solid #ffffff;
+}
+}
+
+.form-btn:hover {
+	color: #323232;
+	background-color: #ffffff;
+}
+.form-btn:active {
+	color: #323232;
+    background-color: rgb(237, 237, 237);
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+
+.header-time-info {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.header-time-info--phone {
+    font-size: 22px;
+	line-height: 24px;
+}
+
+.slider-item__title {
+	font-size: 60px;
+	line-height: 60,35px;  /*??*/
+	font-weight: 700;
+}
+
+.button--big {
+	font-size: 32px;
+	line-height: 44px;
+}
+
+
+.offers-item__title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.offers-item__info {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+.offers-item--jam {
+    background: url("img/raspberries.jpg") no-repeat;
+}
+
+.offers-item--chocolate {
+	background: url("img/"chocolate.jpg) no-repeat;
+}
+
+
+.icy-cream-item__info {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+}
+
+.icy-cream-item__info--weight {
+	font-size: 30px;
+}
+
+.about-ice-cream {
+	color: #323232;
+	background: url("img/pattern-info.jpg");
+}
+
+.about-ice-cream__title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.blog {
+	color: #323232;
+	background: url("img/blog-background.jpg") no-repeat;
+}
+
+.blog__title {
+	font-weight: 500;
+}
+
+.blog__article-link {
+	text-decoration: underline;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.subscribe {
+     color: #5a5a5a;
+     background-color: #ffffff;
+}
+
+.address__info {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.footer-link {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+.footer-link--heart {
+	font-weight: 700;
+}
+
+.footer-copyright__made-in {
+     font-size: 12px;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-link {
+	line-height: 18px;
+}
+.pagination-link:hover {
+    background-color: #9db1a5;
+    cursor: pointer;
+}
+
+.pagination-link:active {
+	color: #353535;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+
+
+.feedback-form {
+	background-color: #f8f7f4;
+}
+
+.feedback-form__title {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
