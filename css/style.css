@@ -170,7 +170,7 @@ a {
 .form-btn {
     border: 2px solid #ffffff;
 }
-}
+
 
 .form-btn:hover {
 	color: #323232;
@@ -195,7 +195,7 @@ a {
 
 .slider-item__title {
 	font-size: 60px;
-	line-height: 60,35px;  /*??*/
+	line-height: 60.35px; 
 	font-weight: 700;
 }
 
@@ -218,11 +218,13 @@ a {
 }
 
 .offers-item--jam {
-    background: url("img/raspberries.jpg") no-repeat;
+    background: url("../img/raspberries.jpg") no-repeat;
+    background-color: #640c1b;
 }
 
 .offers-item--chocolate {
-	background: url("img/"chocolate.jpg) no-repeat;
+	background: url("../img/chocolate.jpg") no-repeat;
+	background-color: #40261b;
 }
 
 
@@ -238,7 +240,8 @@ a {
 
 .about-ice-cream {
 	color: #323232;
-	background: url("img/pattern-info.jpg");
+	background: url("../img/ pattern-info.jpg");
+	background-color: #d9cdb2;
 }
 
 .about-ice-cream__title {
@@ -249,7 +252,8 @@ a {
 
 .blog {
 	color: #323232;
-	background: url("img/blog-background.jpg") no-repeat;
+	background: url("../img/blog-background.jpg") no-repeat;
+	background-color: #ffffff;
 }
 
 .blog__title {
@@ -318,6 +322,7 @@ a {
 	line-height: 28px;
 	font-weight: 500;
 }
+
 
 
 
