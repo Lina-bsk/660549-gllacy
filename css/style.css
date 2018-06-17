@@ -26,10 +26,7 @@
 }
 
 
-body {
-	margin: 0;
-	padding: 0;
-     
+body { 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -205,8 +202,8 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.catalog-input--filler,
-.catalog-input--fat {
+.catalog-input-filler,
+.catalog-input-fat {
 	border: none;
 }
 
@@ -389,177 +386,186 @@ a {
 
 /* С Е Т К А */
 
-
+html,
 body {
-	min-width: 900px;
-    max-width: 1200px;
-    margin: 0 auto;
+	margin: 0 auto;
+	padding: 0;
+	width: 1200px;
 
-} 
-
-.navigation-menu,
-.nav-form,
-.purchase-wrap {
-	display: none;
+	outline: 2px solid red;
 }
 
-.wrap-index {
-	min-width: 860px;
-    max-width: 1146px;
-    width: 100%;
-	margin: 9px 2.25%;  /* для внутренней страницы 2.22% */
-	padding: 0;
+.wrap {
+	width: 1146px;
+	margin: 0 27px;
+
+	outline: 2px solid yellow;
 }
 
 .main-header {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-  
-}
-
-.navigation-wrap {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 18px;
+	padding-top: 9px;
 }
 
 .navigation {
-    display: flex;
+	display: flex;
+	justify-content: space-between;
+
+	outline: 2px solid yellow;
 }
 
 .header-logo {
-	width: 154px;
-	height: 64;
 	margin-right: 22px;
 }
 
 .navigation-list {
 	margin: 0;
 	padding: 0;
-	width: 352px;
-	margin-right: 374px;
-}
+	width: 350px;
+	margin-right: 372px;
+	display: flex;
 
-.navigation-list__item {
-	display: inline-block;
-
+	outline: 2px solid yellow;
 }
 
 .user-nav {
 	margin: 0;
 	padding: 0;
-	width: 244px;
+	display: flex;
+	width: 245px;
+
+	outline: 2px solid yellow;
 }
 
-.user-nav__list {
-	display: inline-block;
+.navigation-menu,
+.nav-form,
+.feedback-form {
+	display: none;
 }
 
 .time-info-wrap {
-    margin: 0;
-	padding: 0;
-	display: flex;
+	margin: 0;
+	padding: 0; 
+	outline: 2px solid red;
 }
 
-.slider {
+.slider-list {
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
 .offers {
 	display: flex;
-	margin: 0;
+	justify-content: space-between;
 	margin-bottom: 40px;
-   
+
+	outline: 2px solid green;
 }
 
 .offers-item {
-    min-width: 420px;
-    max-width: 560px;
-    width: 50%;
-    
+	width: 560px;
 }
 
 .product {
-    margin: 0;
+	margin: 0;
 	padding: 0;
 	margin-bottom: 40px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+
 }
 
 .icy-cream-item {
-	min-width: 200px;
-	max-width: 267px;
-	width: 25%;
+	width: 267px;
+
+	outline: 2px solid yellow;
 }
 
 .about-ice-cream {
-	margin: 0;
-	padding: 0;
 	margin-bottom: 40px;
-	width: 100%;
+
+	outline: 2px solid red;
 }
 
 .about-gllacy {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
+
+	outline: 2px solid yellow;
 }
 
 .about-gllacy__info {
-	min-width: 430px;
-	max-width: 573px;
-	width: 50%;
+    width: 540px;
 }
 
 .block {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 40px;
 	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 .block-item {
-	margin: 0;
-	padding: 0;
-	width: 50%;
+    width: 560px;
 }
 
 .map {
-	margin: 0;
-	padding: 0;
-	max-height: 430px;
 	width: 100%;
 }
 
+.address {
+	width: 478px;
+}
+
 .main-footer {
-    margin: 0;
-	padding: 0;
-	margin-top: 18px;
+	margin-top: 40px; 
+}
+
+.main-footer .wrap {
 	display: flex;
 }
 
-.social-btn,
-.footer-copyright {
-	margin: 0;
-	padding: 0;
-	min-width: 200px; 
-	max-width: 267px;
-	width: 23.3%;
+.social-btn {
+	width: 187px;
+	margin-right: 212px;
+	display: flex;
 }
 
 .helpful-info {
-	margin: 0;
-	padding: 0;
+	width: 330px;
+}
+
+.footer-copyright {
+	width: 190px;
+	margin-left: auto;
+}
+
+.purchase-wrap {
+	width: 540px;
 }
 
 .container-form {
-	margin: 0;
-	padding: 0;
 	margin-bottom: 40px;
+}
+
+.input-name {
+	display: block;
+}
+
+.catalog-input--sort {
+	width: 195px;
+}
+
+.catalog-input--price {
+	width: 220px;
+}
+
+.ccatalog-form-item--radio {
+	width: 418px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.pagination-list {
+	margin: 0;
+	padding: 0; 
 }

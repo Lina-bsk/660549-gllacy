@@ -8,6 +8,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="wrap">
       <nav class="navigation">
         <a class="header-logo-link" href="index.html"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="logo Gllacy Shop"></a>
         <ul class="navigation-list">
@@ -29,7 +30,7 @@
                 <a class="nav-login-link nav-login-link--registration" href="#">Новая регистрация</a>
               </form>
             </li>
-            <li class="user-nav__list user-nav__list_basket-full"><button type="button">Корзина</button>
+            <li class="user-nav__list user-nav__list_basket-full"><button type="button">2 товара</button>
               <div class="purchase-wrap">
               <ul class="purchase">
                 <li class="purchase-item">
@@ -58,15 +59,20 @@
           <li class="breadcrumbs__menu"><a class="breadcrumbs__link" href="#">Каталог</a></li>
           <li class="breadcrumbs__menu">Сливочное</li>
         </ul>
+        <div class="time-info-wrap">
         <p class="header-time-info">С 10 до 20,ежедневно<br>
           <span class="header-time-info__phone">8 812 450-25-25</span>
         </p>
       </div>
+      </div>
+    </div>
       </header>
       <main class="catalog">
+        <div class="wrap">
         <h1 class="catalog__title">Сливочное мороженое</h1>
         <div class="container-form">
           <form class="catalog-form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="catalog-form-item">
             <label class="input-name">Сортировка:</label>
             <select class="catalog-input catalog-input--sort" name="select">
               <option value="popularity">по популярности</option>
@@ -75,10 +81,15 @@
               <option value="expensive">сначала дорогие</option>
               <option value="caloricity">по жирности</option>
             </select>
+          </div>
+          <div class="catalog-form-item">
             <label class="input-name" for="range-price">Цена: 100 руб. - 500 руб.</label>
             <input class="catalog-input catalog-input--price" type="range" name="range" id="range-price" min="100" max="500">
-            <fieldset class="catalog-input catalog-input--fat">
+          </div>
+          
+            <fieldset class="catalog-input-fat">
               <legend class="input-name">Жирность:</legend>
+              <div class="catalog-form-item catalog-form-item--radio">
               <input class="catalog-radio-btn" type="radio" name="fat-content" value="zero" id="zero-percent">
               <label class="catalog-label" for="zero-percent">0%</label>
               <input class="catalog-radio-btn catalog-radio-btn--activ" type="radio" name="fat-content" value="ten" id="ten-percent" checked>
@@ -88,7 +99,9 @@
               <input class="catalog-radio-btn" type="radio" name="fat-content" value="more-thirty" id="more-thirty-percent">
               <label class="catalog-label" for="more-thirty-percent">выше 30%</label>
             </fieldset>
-            <fieldset class="catalog-input catalog-input--filler">
+          </div>
+          <div class="catalog-form-item">
+            <fieldset class="catalog-input-filler">
               <legend class="input-name">Наполнители:</legend>
               <input class="catalog-check-btn catalog-check-btn--checked" type="checkbox" name="chocolate" id="chocolate-filter" checked>
               <label class="catalog-label" for="chocolate-filter">шоколадные</label>
@@ -101,6 +114,7 @@
               <input class="catalog-check-btn" type="checkbox" name="jam" id="jam-filter">
               <label class="catalog-label" for="jam-filter">джемы</label>
             </fieldset>
+          </div>
             <button class="form-btn" type="button">Применить</button>
           </form>
         </div>
@@ -211,8 +225,10 @@
             <li class="pagination-number"><a class="pagination-link" href="#">4</a></li>
             <li class="pagination-number"><a class="pagination-link" href="#">5</a></li>
           </ul>
+        </div>
         </main>
         <footer class="main-footer">
+          <div class="wrap">
           <ul class="social-btn">
             <li class="social-btn__item"><a class="social-btn__link social-btn__link--twitter" href="#">Твитер</a></li>
             <li class="social-btn__item"><a class="social-btn__link social-btn__link--insta" href="#">Инстаграм</a></li>
@@ -229,6 +245,7 @@
             <img class="footer-copyright__html-logo" alt="html academy" src="img/logo-htmlacademy.svg" width="108" height="39">
             <p class="footer-copyright__made-in">Сделано в <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
           </div>
+        </div>
         </footer>
       </body>
     </html>
