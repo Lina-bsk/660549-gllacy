@@ -127,6 +127,25 @@ a {
 	color: #e84d37;
 }
 
+.slider-item {
+    max-width: 1045px;
+	min-width: 900px;
+	height: 881px;
+}
+
+.slider-item--first {
+	background-image: url("../img/slid-1.png");
+	
+}
+
+.slider-item--second {
+	background-image: url("../img/slid-2.png");
+}
+
+.slider-item--third{
+   background-image: url("../img/slid-3.png");
+}
+
 .breadcrumbs {
 	font-size: 14px;
 	line-height: 16px;
@@ -366,24 +385,181 @@ a {
 
 .header-time-info {
 	width: 167px;
-	margin-left: auto;
-	outline: 2px solid yellow;
 }
 
+/* С Е Т К А */
 
 
+body {
+	min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
 
+} 
 
+.navigation-menu,
+.nav-form,
+.purchase-wrap {
+	display: none;
+}
 
+.wrap-index {
+	min-width: 860px;
+    max-width: 1146px;
+    width: 100%;
+	margin: 9px 2.25%;  /* для внутренней страницы 2.22% */
+	padding: 0;
+}
 
+.main-header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+  
+}
 
+.navigation-wrap {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 18px;
+}
 
+.navigation {
+    display: flex;
+}
 
+.header-logo {
+	width: 154px;
+	height: 64;
+	margin-right: 22px;
+}
 
+.navigation-list {
+	margin: 0;
+	padding: 0;
+	width: 352px;
+	margin-right: 374px;
+}
 
+.navigation-list__item {
+	display: inline-block;
 
+}
 
+.user-nav {
+	margin: 0;
+	padding: 0;
+	width: 244px;
+}
 
+.user-nav__list {
+	display: inline-block;
+}
 
+.time-info-wrap {
+    margin: 0;
+	padding: 0;
+	display: flex;
+}
 
+.slider {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
 
+.offers {
+	display: flex;
+	margin: 0;
+	margin-bottom: 40px;
+   
+}
+
+.offers-item {
+    min-width: 420px;
+    max-width: 560px;
+    width: 50%;
+    
+}
+
+.product {
+    margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.icy-cream-item {
+	min-width: 200px;
+	max-width: 267px;
+	width: 25%;
+}
+
+.about-ice-cream {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.about-gllacy {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-gllacy__info {
+	min-width: 430px;
+	max-width: 573px;
+	width: 50%;
+}
+
+.block {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+.block-item {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+
+.map {
+	margin: 0;
+	padding: 0;
+	max-height: 430px;
+	width: 100%;
+}
+
+.main-footer {
+    margin: 0;
+	padding: 0;
+	margin-top: 18px;
+	display: flex;
+}
+
+.social-btn,
+.footer-copyright {
+	margin: 0;
+	padding: 0;
+	min-width: 200px; 
+	max-width: 267px;
+	width: 23.3%;
+}
+
+.helpful-info {
+	margin: 0;
+	padding: 0;
+}
+
+.container-form {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+}
