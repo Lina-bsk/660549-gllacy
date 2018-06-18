@@ -435,7 +435,7 @@ body {
 }
 
 .time-info-wrap {
-	padding-top: 18px;
+	margin-top: 18px;
 
 }
 .container {
@@ -487,12 +487,12 @@ body {
 
 .offers-item__title {
 	margin: 0;
-	padding-bottom: 16px;
+	margin-bottom: 16px;
 
 }
 .offers-item__info {
 	margin: 0;
-	padding-bottom: 44px;
+	margin-bottom: 44px;
 }
 
 .product {
@@ -517,7 +517,7 @@ body {
 
 .about-ice-cream__title {
 	margin: 0;
-	padding-bottom: 24px;
+	margin-bottom: 24px;
 
 }
 
@@ -544,7 +544,7 @@ body {
 
 .blog__title {
 	margin: 0;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .block-item {
@@ -556,7 +556,7 @@ body {
 }
 .subscribe__info {
 	margin: 0;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
 }
 .map {
 	width: 100%;
