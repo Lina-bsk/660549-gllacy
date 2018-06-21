@@ -434,8 +434,20 @@ a {
 
 .icy-cream-item {
 	width: 267px;
+
+	position: relative;
+
+	background-color: rgba(248, 247, 244, 0);
+	transition: all 0.5s ease;
+
 }
 
+.icy-cream-item:hover {
+	border-radius: 5px;
+    background-color: rgba(248, 247, 244, 0.2);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    padding: 10px 13px;
+}
 .icy-cream-item__img {
 	width: 267px;
 	height: 267px;
@@ -445,18 +457,35 @@ a {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
+    
+    margin: 0;
+    padding: 0;
+	position: absolute;
+	top: 205px;
+	left: 0px;
 }
 
 .icy-cream-item__info--weight {
 	font-size: 30px;
 }
 
+.icy-cream-item__description {
+	margin: 0;
+    padding: 5px;
+
+    text-align: center;
+}
 .button--product {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	padding: 9px 15px 11px;
 	border-radius: 25px;
-}
+	margin: 10px auto;
 
+	display: none;
+}
+.icy-cream-item:hover .button--product {
+	display: block;
+}
 
 .about-ice-cream {
 	color: #323232;
