@@ -212,7 +212,8 @@ a {
 
 .btn-search:hover path,
 .btn-login:hover path,
-.btn-basket:hover path {
+.btn-basket:hover path,
+.btn-basket:hover circle {
 	fill: #000000;
 }
 
@@ -532,9 +533,43 @@ a {
 	position: absolute;
 	width: 49px; 
 	height: 49px;
-	background: url("../img/icecream.svg") no-repeat -40px -15px;
+	background: url("../img/icecream.svg") no-repeat;
+	top: 7px;
+	left: 0px;
 }
 
+.about-gllacy__info--cow::before {
+	content: "";
+
+	position: absolute;
+	width: 49px; 
+	height: 49px;
+	background: url("../img/cow.svg") no-repeat;
+	top: 7px;
+	left: -2px;
+}
+
+.about-gllacy__info--leaf::before {
+	content: "";
+
+	position: absolute;
+	width: 49px; 
+	height: 49px;
+	background: url("../img/leaf.svg") no-repeat;
+	top: 7px;
+	left: 0px;
+}
+
+.about-gllacy__info--thermo::before {
+	content: "";
+
+	position: absolute;
+	width: 49px; 
+	height: 49px;
+	background: url("../img/thermometer.svg") no-repeat;
+	top: 7px;
+	left: -2px;
+}
 
 .block {
 	display: flex;
@@ -641,11 +676,10 @@ a {
 	margin: 0;
 	padding: 0;
 
-	width: 267px;
+	width: 190px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-right: 130px;
 	
 }
 
@@ -717,6 +751,7 @@ a {
 .helpful-info {
 	margin: 0;
 	padding: 0;
+	padding-top: 18px;
 	width: 340px;
 
 	display: flex;
@@ -726,8 +761,9 @@ a {
 	margin: 0;
 	padding: 0;
 
-	min-height: 20px;
-    padding-left: 30px; 
+    padding-left: 20px;
+    float: left;
+    min-width: 120px; 
 }
 
 .helpful-info__item--heart {
@@ -743,15 +779,20 @@ a {
 	width: 15px;
 	height: 13px;
 
-	background-image: url("../img/heart.svg") no-repeat;
-
+	background: url("../img/heart.svg") no-repeat;
+    top: 3px;
+    left: 0px;
 }
 
 .footer-copyright {
-	width: 200px;
-	padding-left: 40px;
+	width: 190px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	
 }
+
 .footer-copyright__made-in {
      font-size: 12px;
 
@@ -771,10 +812,7 @@ a {
 	font-weight: 500;
 }
 
-.footer-link-img {
-	display: block;
-	padding-left: 11px;
-}
+
 
 
 
