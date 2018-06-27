@@ -618,25 +618,58 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 40px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 
 }
 
 .icy-cream-item {
 	width: 267px;
-
-	position: relative;
-
-	background-color: rgba(248, 247, 244, 0);
-	transition: all 0.5s ease;
-
+    position: relative;
+	/*transition: all 0.5s ease;*/
+}
+.card-product:nth-child(4n) {
+	margin-right: -26px;
 }
 
-.icy-cream-item:hover {
-	border-radius: 5px;
+.icy-cream-item::before {
+	content: "";
     background-color: rgba(248, 247, 244, 0.2);
+    border-radius: 5px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    padding: 10px 13px;
+
+    position: absolute;
+    width: 293px;
+    height: 406px;
+    top: -8px;
+    left: -13px;
+    z-index: 0;
+    display: none;
+}
+.card-product {
+	position: relative;
+	min-width: 267px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-right: 26px;
+      
+}
+.button--product {
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	padding: 9px 15px 11px;
+	border-radius: 25px;
+	margin-top: 50px;
+
+    position: absolute;
+    display: none;
+
+}
+.icy-cream-item:hover::before {
+	display: block;
+	
+}
+.icy-cream-item:hover+ .button--product {
+	display: block;
+	z-index: 1;
 }
 .icy-cream-item__img {
 	width: 267px;
@@ -647,34 +680,19 @@ input[type="radio"].visually-hidden {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
-    
     margin: 0;
     padding: 0;
 	position: absolute;
 	top: 205px;
 	left: 0px;
 }
-
 .icy-cream-item__info--weight {
 	font-size: 30px;
 }
-
 .icy-cream-item__description {
 	margin: 0;
     padding: 5px;
-
     text-align: center;
-}
-.button--product {
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	padding: 9px 15px 11px;
-	border-radius: 25px;
-	margin: 10px auto;
-
-	display: none;
-}
-.icy-cream-item:hover .button--product {
-	display: block;
 }
 
 .about-ice-cream {
@@ -842,11 +860,6 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	font-size: 14px;
 	line-height: 20px;
-}
-
-.map {
-	width: 1200px;
-	margin: 0 auto;
 }
 
 .main-footer {
