@@ -93,7 +93,7 @@
     </section>
     <ul class="product">
       <div class="card-product">
-      <li class="icy-cream-item">
+      <li class="icy-cream-item product-hit">
           <img class="icy-cream-item__img" src="img/bestseller-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="icy-cream-item__info">310 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
           <p class="icy-cream-item__description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
@@ -101,7 +101,7 @@
       <button type="button" class="button button--product">Быстрый просмотр</button>
         </div>
      <div class="card-product">
-      <li class="icy-cream-item">
+      <li class="icy-cream-item product-hit">
           <img class="icy-cream-item__img" src="img/bestseller-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <p class="icy-cream-item__info">380 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
           <p class="icy-cream-item__description"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
@@ -109,7 +109,7 @@
       <button type="button" class="button button--product">Быстрый просмотр</button>
     </div>
     <div class="card-product">
-      <li class="icy-cream-item">
+      <li class="icy-cream-item product-hit">
           <img class="icy-cream-item__img" src="img/bestseller-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p class="icy-cream-item__info">355 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
           <p class="icy-cream-item__description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
@@ -117,7 +117,7 @@
       <button type="button" class="button button--product">Быстрый просмотр</button>
     </div>
     <div class="card-product">
-      <li class="icy-cream-item">
+      <li class="icy-cream-item product-hit">
           <img class="icy-cream-item__img" src="img/bestseller-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <p class="icy-cream-item__info">415 ₽<span class="icy-cream-item__info--weight">/кг</span></p>
           <p class="icy-cream-item__description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
@@ -139,22 +139,24 @@
         <h2 class="blog__title">Новое в нашем блоге</h2>
         <a class="blog__article-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <section class="block-item subscribe">
+      <section class="block-item wrap-subscribe">
+        <div class="subscribe">
         <p class="subscribe__info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
         <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
           <input class="nav-input nav-input--subscribe" type="email" name="email" id="subscribe-email" placeholder="Электронная почта">
           <button class="button button--subscribe" type="submit">Отправить</button>
         </form>
+      </div>
       </section>
     </div>
   </main>
 </div>
   <section class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370522!2d30.320889251890595!3d59.938794181787266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2slv!4v1528043560284" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <div class="address visually-hidden">
-      <p class="address__info">Адрес главного офиса и офлайн-магазина:<b>ул.Большая Конюшенная 19/8,Санкт-Петербург</b></p>
-      <p class="address__info">Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
+    <div class="address">
+      <p class="address__info">Адрес главного офиса <br>и офлайн-магазина:<span class="address__bold">ул.Большая Конюшенная 19/8,Санкт-Петербург</span></p>
+      <p class="address__info">Для заказов по телефону:<span class="address__bold">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
       <button type="button" class="button button--feedback">Форма обратной связи</button>
     </div>
   </section>
@@ -181,14 +183,19 @@
 </footer>
 </div>
 <!--Всплывающее окно -->
+<section class="feedback">
+  <button class="feedback-close" type="button">Закрыть</button>
+  <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
 <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-<h3 class="feedback-form__title">Мы обязательно вам ответим!</h3>
-<button type="button" class="feedback__close" aria-label="Закрыть"></button>
-<input class="feedback-form-name" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут">
-<input class="feedback-form-email" type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа">
-<textarea class="feedback-form-text" name="text" rows="5" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь"></textarea>
-<button type="submit" class="button">Отправить</button>
+<input class="nav-input feedback-form-input" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут">
+<input class="nav-input feedback-form-input" type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа">
+<textarea class="nav-input feedback-form-text" name="text" rows="6" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь"></textarea>
+<div class="wrap-btn-feedback">
+<button type="submit" class="button feedback-btn">Отправить</button>
+</div>
 </form>
+</section>
+<div class="feedback-overlay"></div>
 </div>
 </div>
 </body>
