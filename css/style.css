@@ -25,7 +25,6 @@
 
 }
 
-
 html,
 body { 
 	font-family: "Roboto", Arial, sans-serif;
@@ -68,6 +67,12 @@ body {
   padding: 0 27px;
   box-sizing: border-box;
 }
+
+.container-catalog {
+  background: url("../img/catalog-glow.png") no-repeat top center;
+  
+}
+
 .slider {
   position: relative;
   padding-top: 272px;
@@ -232,14 +237,15 @@ input[type="radio"].visually-hidden {
 
 
 .main-header {
-	margin: 0 auto;
-	
-    
+	margin: 0 auto;	
+	padding-top: 12px;
 }
-
+.catalog-header {
+	margin: 0 auto;
+	padding-top: 10px;
+}
 .navigation {
 	display: flex;
-	padding-top: 12px;
 }
 
 .header-logo {
@@ -268,6 +274,8 @@ input[type="radio"].visually-hidden {
 	display: block;
 	vertical-align: middle;
 	padding: 8px 12px;
+
+	position: relative;
 }
 
 .navigation-list__link:hover {
@@ -290,7 +298,18 @@ input[type="radio"].visually-hidden {
 	background-color: #d07058;
 	border-radius: 25px;
 	padding: 8px 12px;
-}  
+} 
+.navigation-list__link--decor::after {
+	content: "";
+
+	position: absolute;
+	bottom: 7px;
+	left: 50%;
+	height: 1px;
+	width: calc(100% - 24px);
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateX(-50%);
+} 
 
 .navigation-menu,
 /*.nav-form,*/
@@ -534,6 +553,12 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-decor {
 	padding-left: 5px;
 }
+.breadcrumbs__link {
+	background-image: linear-gradient(transparent 15px, rgba(255, 255, 255, 0.2) 0px);
+}
+.footer-link {
+	background-image: linear-gradient(transparent 14px, rgba(255, 255, 255, 0.2) 0px);
+}
 .conteiner-time {
 	display: flex;
 }
@@ -620,19 +645,25 @@ input[type="radio"].visually-hidden {
 .product {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 40px;
+	
 	display: flex;
 	flex-wrap: wrap;
-
 }
+
 
 .icy-cream-item {
 	width: 267px;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 26px;
+	margin-bottom: 38px;
 	/*transition: all 0.5s ease;*/
 }
-
-.product-hit::after {
+.icy-cream-item--hit::after {
 	content: "";
 
 	width: 61px;
@@ -643,11 +674,9 @@ input[type="radio"].visually-hidden {
 	top: 2px;
 	left: 1px;
 }
-
-.card-product:nth-child(4n) {
+.icy-cream-item:nth-child(4n) {
 	margin-right: -26px;
 }
-
 .icy-cream-item::before {
 	content: "";
     background-color: rgba(248, 247, 244, 0.2);
@@ -662,32 +691,23 @@ input[type="radio"].visually-hidden {
     z-index: 0;
     display: none;
 }
-.card-product {
-	position: relative;
-	min-width: 267px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	margin-right: 26px;
-      
-}
+
 .button--product {
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	padding: 9px 15px 11px;
 	border-radius: 25px;
-	margin-top: 50px;
 
     position: absolute;
+    top: 335px;
     display: none;
-
 }
 .icy-cream-item:hover::before {
 	display: block;
-	
+	z-index: 2;
 }
-.icy-cream-item:hover+ .button--product {
+.icy-cream-item:hover .button--product {
 	display: block;
-	z-index: 1;
+	z-index: 2;
 }
 .icy-cream-item__img {
 	width: 267px;
@@ -703,14 +723,22 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 205px;
 	left: 0px;
+
+	text-shadow: 0.5px 0.8px 3px rgba(49, 50, 53, 0.5);
 }
+
 .icy-cream-item__info--weight {
 	font-size: 30px;
 }
 .icy-cream-item__description {
 	margin: 0;
-    padding: 5px;
+    margin-top: 14px;
     text-align: center;
+}
+
+
+.icy-cream-item__link {
+	background-image: linear-gradient(transparent 18px, rgba(255, 255, 255, 0.2) 0px);
 }
 
 .about-ice-cream {
@@ -867,9 +895,12 @@ input[type="radio"].visually-hidden {
 
 .map {
 	width: 100%;
-	position: relative;
 }
-
+.map__container {
+	position: relative;
+	max-width: 1146px;
+	margin: 0 auto;
+}
 .address {
 	width: 302px;
 	height: 305px;
@@ -879,8 +910,8 @@ input[type="radio"].visually-hidden {
 	border-radius: 10px;
 
 	position: absolute;
-	left: 69%;
-	top: 15%;
+	right: 0;
+	top: 62px;
 }
 
 .address__info {
@@ -904,6 +935,8 @@ input[type="radio"].visually-hidden {
 	border-radius: 25px;
 	padding: 10px 27px;
 }
+
+
 .main-footer {
 	font-size: 13px;
 	line-height: 18px;
@@ -1453,7 +1486,7 @@ input[type="radio"].visually-hidden {
 }
 
 .creamy-ice-cream {
-	margin-bottom: 78px;
+	margin-bottom: 55px;
 }
 
 
@@ -1574,9 +1607,9 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 
 	position: fixed;
-	top: 200px;
+	top: 50%;
 	left: 50%;
-	margin-left: -230px;
+	transform: translate(-50%, -50%);
 	z-index: 2;
 }
 
