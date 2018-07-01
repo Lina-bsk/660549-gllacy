@@ -20,7 +20,7 @@
     font-family: "Roboto";
     src: url("../fonts/robotomedium.woff") format("woff"),
          url("../fonts/robotomedium.woff2") format("woff2");
-    font-weight: medium;
+    font-weight: 500;
     font-style: normal;
 
 }
@@ -79,7 +79,7 @@ body {
   text-align: center;
   color: #ffffff;
 
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 .slider-list {
 	margin: 0;
@@ -251,21 +251,20 @@ input[type="radio"].visually-hidden {
 .header-logo {
 	width: 154px;
 	height: 64px;
-
-	margin-right: 10px;
 }
 
 .navigation-list {
 	margin: 0;
-	padding: 0;
+    padding: 12px 11px;
 	width: 390px;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 12px 6px;
-
+	
 	position: relative;
 }
-
+.navigation-list__item {
+	margin-right: 4px;
+}
 
 .navigation-list__link {
 	line-height: 18px;
@@ -460,7 +459,7 @@ input[type="radio"].visually-hidden {
 
 .btn-login,
 .btn-basket {
-    padding: 8px 16px 9px 46px;
+    padding: 8px 16px 9px 45px;
     border-radius: 20px;   
 
     white-space: nowrap;
@@ -556,9 +555,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs__link {
 	background-image: linear-gradient(transparent 15px, rgba(255, 255, 255, 0.2) 0px);
 }
-.footer-link {
-	background-image: linear-gradient(transparent 14px, rgba(255, 255, 255, 0.2) 0px);
-}
+
 .conteiner-time {
 	display: flex;
 }
@@ -598,7 +595,7 @@ input[type="radio"].visually-hidden {
 .offers-item {
 	box-sizing: border-box;
 	width: 560px;
-	padding: 14px 19px 22px;
+	padding: 14px 19px 24px;
 	border-radius: 15px;
 
 	display: flex;
@@ -663,6 +660,10 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 38px;
 	/*transition: all 0.5s ease;*/
 }
+.product--creamy .icy-cream-item {
+	margin-bottom: 37px;
+}
+
 .icy-cream-item--hit::after {
 	content: "";
 
@@ -671,8 +672,8 @@ input[type="radio"].visually-hidden {
 
 	position: absolute;
 	background: url(../img/bestseller.svg) no-repeat;
-	top: 2px;
-	left: 1px;
+	top: 0px;
+	left: 0px;
 }
 .icy-cream-item:nth-child(4n) {
 	margin-right: -26px;
@@ -721,12 +722,15 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
 	position: absolute;
-	top: 205px;
-	left: 0px;
+	top: 207px;
+	left: -1px;
 
 	text-shadow: 0.5px 0.8px 3px rgba(49, 50, 53, 0.5);
 }
-
+.icy-cream-item__info--currency {
+	font-weight: 500;
+	margin: 0 4px 0 5px;
+}
 .icy-cream-item__info--weight {
 	font-size: 30px;
 }
@@ -734,6 +738,8 @@ input[type="radio"].visually-hidden {
 	margin: 0;
     margin-top: 14px;
     text-align: center;
+
+    min-height: 44px;
 }
 
 
@@ -872,7 +878,7 @@ input[type="radio"].visually-hidden {
      background-color: #f8f7f4;
      border-radius: 15px;
 
-     padding: 30px 20px 35px;
+     padding: 30px 20px 36px;
 }
 
 .subscribe__info {
@@ -903,9 +909,8 @@ input[type="radio"].visually-hidden {
 }
 .address {
 	width: 302px;
-	height: 305px;
 	box-sizing: border-box;
-	padding: 30px 22px;
+	padding: 30px 25px;
 	background-color: #fefefe;
 	border-radius: 10px;
 
@@ -921,7 +926,7 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	font-size: 14px;
 	line-height: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .address__bold {
@@ -930,8 +935,12 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	display: block;
 }
+
+.address__bold--phone {
+	margin: 4px 1px;
+}
 .button--feedback {
-	margin-bottom: 5px;
+	margin-top: 5px;
 	border-radius: 25px;
 	padding: 10px 27px;
 }
@@ -943,8 +952,8 @@ input[type="radio"].visually-hidden {
 	color: #fefefe;
  
 	margin: 0 auto;
-	margin-top: 10px; 
-	margin-bottom: 25px;
+	margin-top: 9px; 
+	padding-bottom: 25px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -952,6 +961,7 @@ input[type="radio"].visually-hidden {
 .social-btn {
 	margin: 0;
 	padding: 0;
+	padding-bottom: 5px;
 
 	width: 190px;
 	display: flex;
@@ -964,7 +974,7 @@ input[type="radio"].visually-hidden {
 	width: 38px;
 	height: 38px;
 	margin: 0;
-	margin-right: 48px;
+	margin-right: 49px;
 	
     position: relative;
 }
@@ -1048,6 +1058,7 @@ input[type="radio"].visually-hidden {
     padding-left: 20px;
     float: left;
     min-width: 120px; 
+    position: relative;
 }
 
 .helpful-info__item--heart {
@@ -1065,7 +1076,22 @@ input[type="radio"].visually-hidden {
 
 	background: url("../img/heart.svg") no-repeat;
     top: 3px;
-    left: 0px;
+    left: -3px;
+}
+
+.footer-link {
+	position: relative;
+	display: inline-block;
+}
+
+.footer-link::before {
+	content: "";
+
+	position: absolute;
+	bottom: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+	height: 1px;
 }
 
 .footer-copyright {
@@ -1073,7 +1099,8 @@ input[type="radio"].visually-hidden {
 	
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
 	
 }
 
@@ -1241,7 +1268,7 @@ input[type="radio"].visually-hidden {
 
 .catalog { 
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 	
 } 
 
@@ -1260,7 +1287,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	align-items: flex-end;
 
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 .catalog-form-block {
 	margin-left: 0;
@@ -1398,7 +1425,7 @@ input[type="radio"].visually-hidden {
 }
 .label-fat:hover::before,
 .label-fat:focus::before {
-	border-color: rgba(255, 255, 255);
+	border-color: rgb(255, 255, 255);
 }
 
 .radio-btn:checked + .label-fat::after {
@@ -1415,7 +1442,7 @@ input[type="radio"].visually-hidden {
 }
 .label-fat:hover::after,
 .label-fat:focus::after {
-	background-color: rgba(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }
 
 
@@ -1482,11 +1509,11 @@ input[type="radio"].visually-hidden {
 .form-btn:active {
 	color: #323232;
     background-color: rgb(237, 237, 237);
-    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105);
+    box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
 
 .creamy-ice-cream {
-	margin-bottom: 55px;
+	margin-bottom: 42px;
 }
 
 
@@ -1602,7 +1629,7 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	background-color: #f8f7f4;
 	width: 477px;
-	padding: 18px 24px 25px;
+	padding: 16px 24px 27px;
 	border-radius: 10px;
 	box-sizing: border-box;
 
@@ -1672,9 +1699,9 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 
 	width: 267px;
-	padding: 12px;
+	padding: 10px 11px 9px;
 
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 .feedback-form-text {
@@ -1688,9 +1715,9 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-end;
 }
 .feedback-btn {
-	margin-top: 25px;
+	margin-top: 17px;
     border-radius: 25px;
-    padding: 12px 20px;
+    padding: 9px 24px 11px;
 }
 
 
