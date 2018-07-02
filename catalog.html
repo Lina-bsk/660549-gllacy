@@ -33,12 +33,12 @@
           <form class="nav-form nav-form--login" method="post" action="https://echo.htmlacademy.ru">
             <input class="nav-input nav-input--login" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
             <input class="nav-input nav-input--login" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
-            <button type="button" class="button button--login">Войти</button>
+            <a class="button button--login" href="#">Войти</a>
             <a class="nav-login-link" href="#">Забыли пароль?</a>
             <a class="nav-login-link" href="#">Новая регистрация</a>
           </form>
         </li>
-        <li class="user-nav__list user-nav__list--basket-full"><a class="user-nav__btn btn-basket"><span class="btn-basket-icon"><svg enable-background="new 0 0 21 20" height="20" viewBox="0 0 21 20" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m5.888 4.031 1.034 8.969h10.45l1.176-8.969z" fill="#e84d37"/><g fill="#343434"><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/><path d="m5.657 2.031-.235-2.031h-5.422v2h3.64l1.5 13h13.988l1.699-12.969zm11.715 10.969h-10.45l-1.034-8.969h12.66z"/></g></svg></span>2 товара</a>
+        <li class="user-nav__list user-nav__list--basket-full"><a class="user-nav__btn btn-basket" href="#" tabindex="0"><span class="btn-basket-icon"><svg enable-background="new 0 0 21 20" height="20" viewBox="0 0 21 20" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m5.888 4.031 1.034 8.969h10.45l1.176-8.969z" fill="#e84d37"/><g fill="#343434"><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/><path d="m5.657 2.031-.235-2.031h-5.422v2h3.64l1.5 13h13.988l1.699-12.969zm11.715 10.969h-10.45l-1.034-8.969h12.66z"/></g></svg></span>2 товара</a>
         <div class="purchase-wrap">
           <ul class="purchase">
             <li class="purchase-item">
@@ -78,61 +78,60 @@
   <h1 class="catalog__title">Сливочное мороженое</h1>
   <form class="catalog-form" method="get" action="https://echo.htmlacademy.ru">
     <div class="catalog-form-container">
-    <div class="catalog-form-block">
-      <label class="input-name">Сортировка:</label>
-      <div class="catalog-select">
-        <select class="select-sort" name="select">
-          <option value="popularity">по популярности</option>
-          <option value="popularity">по популярности</option>
-          <option value="inexpensive">сначала недорогие</option>
-          <option value="expensive">сначала дорогие</option>
-          <option value="caloricity">по жирности</option>
-        </select>
-      </div>
-    </div>
-    <div class="catalog-form-block">
-      <p class="input-name">Цена: 100 руб. - 500 руб.</p>
-      <div class="catalog-range">
-        <div class="price-scale">
-          <div class="price-bar"></div>
+      <div class="catalog-form-block">
+        <label class="input-name">Сортировка:</label>
+        <div class="catalog-select">
+          <select class="select-sort" name="select">
+            <option value="popularity">по популярности</option>
+            <option value="inexpensive">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="caloricity">по жирности</option>
+          </select>
         </div>
-        <div class="range-price range-price-min">
+      </div>
+      <div class="catalog-form-block">
+        <p class="input-name">Цена: 100 руб. - 500 руб.</p>
+        <div class="catalog-range">
+          <div class="price-scale">
+            <div class="price-bar"></div>
+          </div>
+          <div class="range-price range-price-min">
+          </div>
+          <div class="range-price range-price-max"></div>
         </div>
-        <div class="range-price range-price-max"></div>
       </div>
+      <fieldset class="catalog-input-fat catalog-form-block">
+        <legend class="input-name">Жирность:</legend>
+        <div class="catalog-form-item catalog-form-item--radio">
+          <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="zero" id="zero-percent">
+          <label class="catalog-label label-fat" for="zero-percent" tabindex="0">0%</label>
+          <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="ten" id="ten-percent" checked>
+          <label class="catalog-label label-fat" for="ten-percent" tabindex="0">до 10%</label>
+          <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="thirty" id="thirty-percent">
+          <label class="catalog-label label-fat" for="thirty-percent" tabindex="0">до 30%</label>
+          <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="more-thirty" id="more-thirty-percent">
+          <label class="catalog-label label-fat" for="more-thirty-percent" tabindex="0">выше 30%</label>
+        </div>
+      </fieldset>
     </div>
-    <fieldset class="catalog-input-fat catalog-form-block">
-      <legend class="input-name">Жирность:</legend>
-      <div class="catalog-form-item catalog-form-item--radio">
-        <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="zero" id="zero-percent">
-        <label class="catalog-label label-fat" for="zero-percent">0%</label>
-        <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="ten" id="ten-percent" checked>
-        <label class="catalog-label label-fat" for="ten-percent">до 10%</label>
-        <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="thirty" id="thirty-percent">
-        <label class="catalog-label label-fat" for="thirty-percent">до 30%</label>
-        <input class="visually-hidden radio-btn" type="radio" name="fat-content" value="more-thirty" id="more-thirty-percent">
-        <label class="catalog-label label-fat" for="more-thirty-percent">выше 30%</label>
-      </div>
-    </fieldset>
-  </div>
-  <div class="catalog-form-container">
-    <fieldset class="catalog-input-filler catalog-form-block">
-      <legend class="input-name">Наполнители:</legend>
-      <div class="catalog-form-item catalog-form-item--checkbox">
-        <input class="visually-hidden checkbox-btn" type="checkbox" name="chocolate" id="chocolate-filter" checked>
-        <label class="catalog-label label-filler" for="chocolate-filter">шоколадные</label>
-        <input class="visually-hidden checkbox-btn" type="checkbox" name="sugar" id="sugar-filter" checked>
-        <label class="catalog-label label-filler" for="sugar-filter">сахарные присыпки</label>
-        <input class="visually-hidden checkbox-btn" type="checkbox" name="fruit" id="fruit-filter">
-        <label class="catalog-label label-filler" for="fruit-filter">фрукты</label>
-        <input class="visually-hidden checkbox-btn" type="checkbox" name="syrups" id="syrups-filter">
-        <label class="catalog-label label-filler" for="syrups-filter">сиропы</label>
-        <input class="visually-hidden checkbox-btn" type="checkbox" name="jam" id="jam-filter">
-        <label class="catalog-label label-filler" for="jam-filter">джемы</label>
-      </div>
-    </fieldset>
-    <button class="form-btn">Применить</button>
-  </div>
+    <div class="catalog-form-container">
+      <fieldset class="catalog-input-filler catalog-form-block">
+        <legend class="input-name">Наполнители:</legend>
+        <div class="catalog-form-item catalog-form-item--checkbox">
+          <input class="visually-hidden checkbox-btn" type="checkbox" name="chocolate" id="chocolate-filter" checked>
+          <label class="catalog-label label-filler" for="chocolate-filter" tabindex="0">шоколадные</label>
+          <input class="visually-hidden checkbox-btn" type="checkbox" name="sugar" id="sugar-filter" checked>
+          <label class="catalog-label label-filler" for="sugar-filter" tabindex="0">сахарные присыпки</label>
+          <input class="visually-hidden checkbox-btn" type="checkbox" name="fruit" id="fruit-filter">
+          <label class="catalog-label label-filler" for="fruit-filter" tabindex="0">фрукты</label>
+          <input class="visually-hidden checkbox-btn" type="checkbox" name="syrups" id="syrups-filter">
+          <label class="catalog-label label-filler" for="syrups-filter" tabindex="0">сиропы</label>
+          <input class="visually-hidden checkbox-btn" type="checkbox" name="jam" id="jam-filter">
+          <label class="catalog-label label-filler" for="jam-filter" tabindex="0">джемы</label>
+        </div>
+      </fieldset>
+      <button class="form-btn">Применить</button>
+    </div>
   </form>
   <section class="creamy-ice-cream">
     <h2 class="visually-hidden">Ассортимент сливочного мороженого</h2>
@@ -194,7 +193,7 @@
       <li class="icy-cream-item">
         <img class="icy-cream-item__img" src="img/icecream-3b.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
         <p class="icy-cream-item__info">435<span class="icy-cream-item__info--currency">₽</span><span class="icy-cream-item__info--weight">/кг</span></p>
-        <p class="icy-cream-item__description"><a class="icy-cream-item__link" href="#">Сливочное с ментоловым сиропом</a></p>
+        <p class="icy-cream-item__description"><a class="icy-cream-item__link" href="#">Сливочное с ментоловым<br>сиропом</a></p>
         <button type="button" class="button button--product">Быстрый просмотр</button>
       </li>
       <li class="icy-cream-item">
