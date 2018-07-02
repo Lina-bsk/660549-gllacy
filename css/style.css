@@ -448,8 +448,10 @@ input[type="radio"].visually-hidden {
 .nav-input:hover {
 	box-shadow: inset 0 0 0 2px #c7c6c5;
 }
+
 .nav-input:focus {
-	box-shadow: inset 0 0 0 2px #8fbdec;
+	-webkit-box-shadow: inset 0 0 0 2px #8fbdec;
+	        box-shadow: inset 0 0 0 2px #8fbdec;
 }
 
 .nav-form--search {
