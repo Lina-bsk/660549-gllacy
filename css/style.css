@@ -620,8 +620,9 @@ a
 
     position: relative;
 
-    color: #323232;
     display: inline-block;
+
+    color: #323232;
 }
 
 .nav-login-link::before
@@ -635,7 +636,6 @@ a
     content: '';
 
     background: rgba(0, 0, 0, .3);
-
 }
 
 .nav-login-link:hover,
@@ -1207,6 +1207,9 @@ a
 
 .address
 {
+    font-size: 14px;
+    line-height: 20px;
+
     position: absolute;
     top: 62px;
     right: 0;
@@ -1215,21 +1218,20 @@ a
     width: 302px;
     padding: 29px 25px;
 
+    color: #323232;
     border-radius: 10px;
     background-color: #fefefe;
-    color: #323232;
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .address__info
 {
     margin: 0;
     margin-right: 95px;
-    padding: 0;   
+    padding: 0;
 }
 
-.address__info-phone {
+.address__info-phone
+{
     margin-bottom: 23px;
 }
 .address__bold
@@ -1239,8 +1241,8 @@ a
     line-height: 24px;
 
     margin: 0;
-    padding: 0;
     margin-bottom: 18px;
+    padding: 0;
 }
 
 .address__bold--phone
@@ -1252,7 +1254,6 @@ a
 {
     display: block;
 
-    
     padding: 9px 27px 11px;
 
     border-radius: 25px;
@@ -1488,6 +1489,7 @@ a
 .purchase-wrap
 {
     position: absolute;
+    z-index: 1;
     top: 36px;
     right: 0;
 
