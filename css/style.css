@@ -996,7 +996,7 @@ a
 {
     box-sizing: border-box;
     margin-bottom: 40px;
-    padding: 25px 19px 23px;
+    padding: 25px 21px 21px 19px;
 
     color: #323232;
     border-radius: 13px;
@@ -1036,18 +1036,18 @@ a
     position: relative;
 
     box-sizing: border-box;
-    width: 540px;
+    width: 539px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 2px;
-    padding-left: 55px;
+    padding-left: 57px;
 }
 
 .about-gllacy__info--icecream::before
 {
     position: absolute;
-    top: 7px;
-    left: 0;
+    top: 8px;
+    left: 1px;
 
     width: 49px;
     height: 49px;
@@ -1060,8 +1060,8 @@ a
 .about-gllacy__info--cow::before
 {
     position: absolute;
-    top: 7px;
-    left: -2px;
+    top: 8px;
+    left: -1px;
 
     width: 49px;
     height: 49px;
@@ -1075,7 +1075,7 @@ a
 {
     position: absolute;
     top: 7px;
-    left: 0;
+    left: 1px;
 
     width: 49px;
     height: 49px;
@@ -1089,7 +1089,7 @@ a
 {
     position: absolute;
     top: 7px;
-    left: -2px;
+    left: -1px;
 
     width: 49px;
     height: 49px;
@@ -1119,7 +1119,7 @@ a
 
 .blog
 {
-    padding: 24px 20px;
+    padding: 23px 19px;
 
     color: #323232;
     background: url('../img/blog-background.jpg') no-repeat;
