@@ -135,6 +135,7 @@ body
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
 }
+
 .slide-button:hover
 {
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -146,6 +147,7 @@ body
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
+
 .slider-controls label
 {
     display: inline-block;
@@ -171,16 +173,19 @@ body
     bottom: 21px;
     left: 0;
 }
+
 .slide
 {
     display: none;
 }
+
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
 #product-3:checked ~ .site-wrapper #slide3
 {
     display: block;
 }
+
 #product-1:checked ~ .site-wrapper label[for='product-1'],
 #product-2:checked ~ .site-wrapper label[for='product-2'],
 #product-3:checked ~ .site-wrapper label[for='product-3']
@@ -224,6 +229,7 @@ a
 
     color: #fff;
 }
+
 .visually-hidden
 {
     position: absolute;
@@ -255,7 +261,7 @@ a
     color: #fff;
     border: none;
     background-color: #e84d37;
-    background-image: linear-gradient( to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
 }
 
@@ -313,6 +319,7 @@ a
 
     flex-wrap: wrap;
 }
+
 .navigation-list__item
 {
     margin-right: 4px;
@@ -355,6 +362,7 @@ a
     border-radius: 25px;
     background-color: #d07058;
 }
+
 .navigation-list__link--decor::after
 {
     position: absolute;
@@ -428,6 +436,7 @@ a
 
     background: rgba(53, 53, 53, .2);
 }
+
 .navigation-menu__link:hover,
 .navigation-menu__link:focus
 {
@@ -597,6 +606,7 @@ a
 
     padding: 20px 19px 18px 19px;
 }
+
 .nav-input--login
 {
     width: 240px;
@@ -691,10 +701,18 @@ a
 
     color: #ffbc9e;
 }
+
+.footer-link:hover::before,
+.footer-link:active::before
+{
+    background-color: rgba(249, 172, 159, .3);
+}
+
 .breadcrumbs-decor
 {
     padding-left: 5px;
 }
+
 .breadcrumbs__link
 {
     position: relative;
@@ -711,6 +729,12 @@ a
     content: '';
 
     background: rgba(255, 255, 255, .2);
+}
+
+.breadcrumbs__link:hover::before,
+.breadcrumbs__link:active::before
+{
+    background-color: rgba(249, 172, 159, 0.3);
 }
 
 .conteiner-time
@@ -812,7 +836,7 @@ a
 {
     margin-right: 26px;
 
-    background: url('../img/raspberries.jpg') no-repeat 0 0;
+    background: url('../img/raspberries.jpg');
     background-color: #640c1b;
 }
 
@@ -1114,7 +1138,7 @@ a
 {
     box-sizing: border-box;
     width: 560px;
-    height: 220px;
+    min-height: 220px;
 
     border-radius: 15px;
 }
@@ -1142,6 +1166,8 @@ a
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+
+    position: relative;
 
     display: block;
 
@@ -1234,6 +1260,7 @@ a
 {
     margin-bottom: 23px;
 }
+
 .address__bold
 {
     font-size: 18px;
@@ -1682,6 +1709,7 @@ a
 
     align-items: flex-end;
 }
+
 .catalog-form-block
 {
     margin-right: 15px;
@@ -1836,6 +1864,7 @@ a
     margin-right: 14px;
     padding-left: 35px;
 }
+
 .label-fat::before
 {
     position: absolute;
