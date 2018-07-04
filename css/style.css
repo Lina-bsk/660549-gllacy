@@ -1166,16 +1166,10 @@ a
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-
-    position: relative;
-
-    display: block;
-
     padding-right: 200px;
-
-    text-decoration: underline;
-
     color: #323232;
+    text-decoration: underline;
+    display: inline-block;
 }
 
 .wrap-subscribe
@@ -1776,6 +1770,10 @@ a
 
     -webkit-appearance: none;
        -moz-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .select-sort:hover,
