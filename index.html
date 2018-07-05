@@ -21,7 +21,7 @@
           <ul class="navigation-list">
             <li class="navigation-list__item navigation-list__item--open"><a class="navigation-list__link navigation-list__link--decor" href="#">Каталог</a>
               <ul class="navigation-menu">
-                <li class="navigation-menu__item navigation-menu__item--new"><a class="navigation-menu__link" href="#"><b>Новинки</b></a></li>
+                <li class="navigation-menu__item navigation-menu__item--new"><a class="navigation-menu__link" href="#">Новинки</a></li>
                 <li class="navigation-menu__item"><a class="navigation-menu__link" href="catalog.html">Сливочное</a></li>
                 <li class="navigation-menu__item"><a class="navigation-menu__link" href="#">Щербеты</a></li>
                 <li class="navigation-menu__item"><a class="navigation-menu__link" href="#">Фруктовый лед</a></li>
@@ -159,7 +159,7 @@
           <p class="address__bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <div class="address__info-phone">Для заказов по телефону:
             <p class="address__bold address__bold--phone">8 812 450-25-25</p>(с 10 до 20 ежедневно)</div>
-          <a class="button button--feedback" href="#">Форма обратной связи</a>
+          <a class="button button--feedback" href="form.html">Форма обратной связи</a>
         </div>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370522!2d30.320889251890595!3d59.938794181787266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2slv!4v1528043560284" allowfullscreen></iframe>
@@ -175,7 +175,7 @@
           </li>
         </ul>
         <ul class="helpful-info">
-          <li class="helpful-info__item helpful-info__item--heart"><a class="footer-link footer-link--heart" href="#"><b>Для поставщиков</b></a></li>
+          <li class="helpful-info__item helpful-info__item--heart"><a class="footer-link footer-link--heart" href="#">Для поставщиков</a></li>
           <li class="helpful-info__item"><a class="footer-link" href="#">Наши документы</a></li>
           <li class="helpful-info__item"><a class="footer-link" href="#">О производстве</a></li>
           <li class="helpful-info__item"><a class="footer-link" href="#">Экологические стандарты</a></li>
@@ -185,22 +185,22 @@
           <p class="footer-copyright__made-in">Сделано в <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
         </div>
       </footer>
-      <div class="feedback-overlay">
-        <section class="feedback">
-          <button class="feedback-close" type="button">Закрыть</button>
-          <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
-          <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-            <input class="nav-input feedback-form-input" type="text" name="name" placeholder="Как вас зовут?" aria-label="Как вас зовут">
-            <input class="nav-input feedback-form-input" type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа">
-            <textarea class="nav-input feedback-form-text" name="text" rows="6" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь"></textarea>
-            <div class="wrap-btn-feedback">
-              <a class="button feedback-btn" href="#">Отправить</a>
-            </div>
-          </form>
-        </section>
-      </div>
+      <section class="feedback">
+        <button class="feedback-close" type="button">Закрыть</button>
+        <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+        <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+          <input class="nav-input feedback-form-input" type="text" name="login" placeholder="Как вас зовут?" aria-label="Как вас зовут">
+          <input class="nav-input feedback-form-input" type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа">
+          <textarea class="nav-input feedback-form-text" name="text" rows="6" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь"></textarea>
+          <div class="wrap-btn-feedback">
+            <button type="submit" class="button feedback-btn">Отправить</button>
+          </div>
+        </form>
+      </section>
+      <div class="feedback-overlay"></div>
     </div>
   </div>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
