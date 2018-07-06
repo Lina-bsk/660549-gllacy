@@ -1267,7 +1267,7 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 39px;
+    margin-bottom: 40px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1320,6 +1320,7 @@ a
 
 .wrap-subscribe
 {
+    display: flex;
     padding: 5px;
 
     background: -webkit-repeating-linear-gradient(315deg, #f8f7f4, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
@@ -1329,7 +1330,7 @@ a
 
 .subscribe
 {
-    padding: 30px 20px 36px;
+    padding: 29px 19px 35px 21px;
 
     color: #5a5a5a;
     border-radius: 15px;
@@ -2128,7 +2129,6 @@ select::-ms-expand
     background-color: rgba(255, 255, 255, 0.4);
     cursor: default;
 }
-
 
 .checkbox-btn:disabled + .label-filler::before {
     opacity: 0.4;
