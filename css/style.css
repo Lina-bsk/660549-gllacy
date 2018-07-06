@@ -1,3 +1,4 @@
+
 @font-face
 {
     font-family: 'Roboto';
@@ -2081,11 +2082,13 @@ select::-ms-expand
     margin-right: 12px;
     padding-left: 39px;
 }
+
 .label-fat:hover::before,
 .label-fat:focus::before
 {
     border-color: rgb(255, 255, 255);
 }
+
 
 .radio-btn:checked + .label-fat::after
 {
@@ -2102,21 +2105,46 @@ select::-ms-expand
     background-color: rgba(255, 255, 255, .8);
 }
 
-.label-fat:hover::after,
-.label-fat:focus::after
-{
+.radio-btn:checked + .label-fat:hover::after,
+.radio-btn:checked + .label-fat:focus::after {
     background-color: rgb(255, 255, 255);
 }
 
 
-.radio-btn:disabled + .label-fat::before,
-.radio-btn:disabled + .label-fat::after,
-.checkbox-btn:disabled + .label-filler::before,
-.checkbox-btn:disabled + .label-filler::before
+.radio-btn:disabled + .label-fat::before
 {
-    opacity: .4;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+.radio-btn:disabled + .label-fat::after {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
+.radio-btn:disabled:hover + .label-fat::before
+{
+    border-color: rgba(255, 255, 255, 0.4);
+    cursor: default;
+}
+.radio-btn:disabled:hover + .label-fat::after {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: default;
+}
+
+
+.checkbox-btn:disabled + .label-filler::before {
+    opacity: 0.4;
+}
+.checkbox-btn:disabled:hover + .label-filler::before {
+    opacity: 0.4;
+    cursor: default;
+}
+.checkbox-btn:checked:disabled + .label-filler::before {
+    opacity: 0.4;
+}
+
+.checkbox-btn:checked:disabled:hover + .label-filler::before {
+    opacity: 0.4;
+    cursor: default;
+}
 .catalog-form-item--checkbox
 {
     display: -webkit-box;
