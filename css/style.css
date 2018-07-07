@@ -1320,7 +1320,10 @@ a
 
 .wrap-subscribe
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     padding: 5px;
 
     background: -webkit-repeating-linear-gradient(315deg, #f8f7f4, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
@@ -1373,7 +1376,6 @@ a
     background: url('../img/map.jpg') no-repeat;
     background-position: top center;
     background-size: cover;
-    
 }
 
 
@@ -2107,43 +2109,54 @@ select::-ms-expand
 }
 
 .radio-btn:checked + .label-fat:hover::after,
-.radio-btn:checked + .label-fat:focus::after {
+.radio-btn:checked + .label-fat:focus::after
+{
     background-color: rgb(255, 255, 255);
 }
 
 
 .radio-btn:disabled + .label-fat::before
 {
-    border-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, .4);
 }
-.radio-btn:disabled + .label-fat::after {
-    background-color: rgba(255, 255, 255, 0.4);
+.radio-btn:disabled + .label-fat::after
+{
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .radio-btn:disabled:hover + .label-fat::before
 {
-    border-color: rgba(255, 255, 255, 0.4);
     cursor: default;
+
+    border-color: rgba(255, 255, 255, .4);
 }
-.radio-btn:disabled:hover + .label-fat::after {
-    background-color: rgba(255, 255, 255, 0.4);
+.radio-btn:disabled:hover + .label-fat::after
+{
     cursor: default;
+
+    background-color: rgba(255, 255, 255, .4);
 }
 
-.checkbox-btn:disabled + .label-filler::before {
-    opacity: 0.4;
+.checkbox-btn:disabled + .label-filler::before
+{
+    opacity: .4;
 }
-.checkbox-btn:disabled:hover + .label-filler::before {
-    opacity: 0.4;
+.checkbox-btn:disabled:hover + .label-filler::before
+{
     cursor: default;
+
+    opacity: .4;
 }
-.checkbox-btn:checked:disabled + .label-filler::before {
-    opacity: 0.4;
+.checkbox-btn:checked:disabled + .label-filler::before
+{
+    opacity: .4;
 }
 
-.checkbox-btn:checked:disabled:hover + .label-filler::before {
-    opacity: 0.4;
+.checkbox-btn:checked:disabled:hover + .label-filler::before
+{
     cursor: default;
+
+    opacity: .4;
 }
 .catalog-form-item--checkbox
 {
